@@ -2,17 +2,17 @@
 $st-wrapper---dp: $html---dp !default;
 
 @mixin st-wrapper() {
-   @include component;
+  @include component;
 
-   padding: $st-divider---dp;
-   display: block;
-   clear: both;
+  padding: $st-divider---dp;
+  display: block;
+  clear: both;
 
-   &--half {
-      padding: $st-divider---dp / 2;
-   }
+  &--half {
+    padding: $st-divider---dp / 2;
+  }
 }
 
 .st-wrapper {
-   @include st-wrapper();
+  @include st-wrapper();
 }

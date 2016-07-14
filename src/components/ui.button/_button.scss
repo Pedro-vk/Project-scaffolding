@@ -12,63 +12,63 @@ $st-button--slim---height: 30px !default;
 $st-button__icon---margin: 8px !default;
 
 @mixin st-button() {
-   @include component;
-   @include transition;
-   @include typo($st-button---font-family);
+  @include component;
+  @include transition;
+  @include typo($st-button---font-family);
 
-   border: $st-button---border;
-   background: $st-button---background;
-   font-size: $st-button---font-size;
-   padding: 0 $st-button---padding;
-   cursor: pointer;
-   outline: none;
+  border: $st-button---border;
+  background: $st-button---background;
+  font-size: $st-button---font-size;
+  padding: 0 $st-button---padding;
+  cursor: pointer;
+  outline: none;
 
-   @if ($st-button---is-upper) {
-      text-transform: uppercase;
-   }
+  @if ($st-button---is-upper) {
+    text-transform: uppercase;
+  }
 
-   &:hover {
-      background: $st-button--hover---background;
-   }
+  &:hover {
+    background: $st-button--hover---background;
+  }
 
-   &,
-   &__icon,
-   &__text {
-      height: $st-button---height;
-      line-height: $st-button---height;
-      display: inline-block;
-      vertical-align: middle;
-   }
+  &,
+  &__icon,
+  &__text {
+    height: $st-button---height;
+    line-height: $st-button---height;
+    display: inline-block;
+    vertical-align: middle;
+  }
 
-   &__text {
-      line-height: $st-button---height - 3px;
-   }
+  &__text {
+    line-height: $st-button---height - 3px;
+  }
 
-   &__icon {
-      margin-right: $st-button__icon---margin;
-      float: left;
-      font-size: 1.1em;
-   }
+  &__icon {
+    margin-right: $st-button__icon---margin;
+    float: left;
+    font-size: 1.1em;
+  }
 
-   &--icon-right &__icon {
-      float: right;
-      margin-left: $st-button__icon---margin;
-      margin-right: 0;
-   }
+  &--icon-right &__icon {
+    float: right;
+    margin-left: $st-button__icon---margin;
+    margin-right: 0;
+  }
 
-   &--slim {
-      font-size: $st-button--slim---font-size;
-   }
+  &--slim {
+    font-size: $st-button--slim---font-size;
+  }
 
-   &--slim,
-   &--slim &__icon,
-   &--slim &__text {
-      height: $st-button--slim---height;
-      line-height: $st-button--slim---height;
-      vertical-align: top;
-   }
+  &--slim,
+  &--slim &__icon,
+  &--slim &__text {
+    height: $st-button--slim---height;
+    line-height: $st-button--slim---height;
+    vertical-align: top;
+  }
 }
 
 .st-button {
-   @include st-button();
+  @include st-button();
 }
