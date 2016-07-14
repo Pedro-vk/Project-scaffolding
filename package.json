@@ -17,6 +17,12 @@
   "bugs": {
     "url": "https://github.com/PedroGutierrezStratio/Project-scaffolding/issues"
   },
+  "scripts": {
+    "start": "gulp serve",
+    "build": "gulp build",
+    "test": "gulp test",
+    "test:watch": "gulp test:watch"
+  },
   "homepage": "https://github.com/PedroGutierrezStratio/Project-scaffolding#readme",
   "dependencies": {
     "angular": "1.5.7",
