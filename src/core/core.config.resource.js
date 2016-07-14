@@ -1,14 +1,14 @@
 (function() {
-   'use strict';
+  'use strict';
 
-   angular
-      .module('app.core')
-      .config(ResourceConfiguration);
+  angular
+    .module('app.core')
+    .config(ResourceConfiguration);
 
-   ResourceConfiguration.$inject = ['$resourceProvider'];
+  ResourceConfiguration.$inject = ['$resourceProvider'];
 
-   /* @ngInject */
-   function ResourceConfiguration($resourceProvider) {
-      $resourceProvider.defaults.stripTrailingSlashes = false;
-   }
+  /* @ngInject */
+  function ResourceConfiguration($resourceProvider) {
+    $resourceProvider.defaults.stripTrailingSlashes = false;
+  }
 })();

@@ -1,8 +1,8 @@
 (function() {
-   'use strict';
+  'use strict';
 
-   angular.module('app.service', [
-      'app.core',
-      'app.mock'
-   ]);
+  angular.module('app.service', [
+    'app.core',
+    'app.mock'
+  ]);
 })();

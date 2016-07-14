@@ -1,13 +1,13 @@
 (function() {
-   'use strict';
+  'use strict';
 
-   angular
-      .module('app')
-      .config(AppRoutes);
+  angular
+    .module('app')
+    .config(AppRoutes);
 
-   AppRoutes.$inject = ['$urlRouterProvider'];
+  AppRoutes.$inject = ['$urlRouterProvider'];
 
-   function AppRoutes($urlRouterProvider) {
-      $urlRouterProvider.otherwise('/dashboard');
-   }
+  function AppRoutes($urlRouterProvider) {
+    $urlRouterProvider.otherwise('/dashboard');
+  }
 })();

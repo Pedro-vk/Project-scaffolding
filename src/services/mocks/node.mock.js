@@ -1,29 +1,29 @@
 (function() {
-   'use strict';
+  'use strict';
 
-   angular
-      .module('app.service')
-      .config(NodeMock);
+  angular
+    .module('app.service')
+    .config(NodeMock);
 
-   NodeMock.$inject = ['MockStorageProvider'];
+  NodeMock.$inject = ['MockStorageProvider'];
 
-   /* @ngInject */
-   function NodeMock(MockStorageProvider) {
-      var self = MockStorageProvider.getMockBase();
+  /* @ngInject */
+  function NodeMock(MockStorageProvider) {
+    var self = MockStorageProvider.getMockBase();
 
-      self
-         .setName('Node')
-         .addMethod('GET')
-         .setUrl('node/*')
-         .setDataGenerator(dataGenerator)
-         .storeMock();
+    self
+      .setName('Node')
+      .addMethod('GET')
+      .setUrl('node/*')
+      .setDataGenerator(dataGenerator)
+      .storeMock();
 
-      function dataGenerator(url = [null, 0]) {
-         return self
-            .getMockStorage()
-            .getMockByName('NodeList')
-            .getData()
-            .filter(node => ~~node.id === ~~url[1])[0];
-      }
-   }
+    function dataGenerator(url = [null, 0]) {
+      return self
+        .getMockStorage()
+        .getMockByName('NodeList')
+        .getData()
+        .filter(node => ~~node.id === ~~url[1])[0];
+    }
+  }
 })();

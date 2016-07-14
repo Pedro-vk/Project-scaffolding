@@ -1,14 +1,14 @@
 (function() {
-   'use strict';
+  'use strict';
 
-   angular
-      .module('app.service')
-      .service('ApiNode', ApiNode);
+  angular
+    .module('app.service')
+    .service('ApiNode', ApiNode);
 
-   ApiNode.$inject = ['API_URL', '$resource'];
+  ApiNode.$inject = ['API_URL', '$resource'];
 
-   function ApiNode(API_URL, $resource) {
-      var url = API_URL + 'node/:id';
-      return $resource(url);
-   }
+  function ApiNode(API_URL, $resource) {
+    var url = API_URL + 'node/:id';
+    return $resource(url);
+  }
 })();

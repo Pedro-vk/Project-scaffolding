@@ -1,9 +1,9 @@
 (function() {
-   'use strict';
+  'use strict';
 
-   angular.module('app', [
-      'app.core',
-      'app.mock',
-      'app.dashboard'
-   ]);
+  angular.module('app', [
+    'app.core',
+    'app.mock',
+    'app.dashboard'
+  ]);
 })();

@@ -1,14 +1,14 @@
 (function() {
-   'use strict';
+  'use strict';
 
-   angular
-      .module('app.mock')
-      .config(InterceptorConfiguration);
+  angular
+    .module('app.mock')
+    .config(InterceptorConfiguration);
 
-   InterceptorConfiguration.$inject = ['$httpProvider'];
+  InterceptorConfiguration.$inject = ['$httpProvider'];
 
-   /* @ngInject */
-   function InterceptorConfiguration($httpProvider) {
-      $httpProvider.interceptors.push('MockInterceptorService');
-   }
+  /* @ngInject */
+  function InterceptorConfiguration($httpProvider) {
+    $httpProvider.interceptors.push('MockInterceptorService');
+  }
 })();

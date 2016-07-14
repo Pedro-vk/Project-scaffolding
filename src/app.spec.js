@@ -1,12 +1,12 @@
 describe('module: app', () => {
 
-   beforeEach(module('app'));
+  beforeEach(module('app'));
 
-   beforeEach(inject(function() {
+  beforeEach(inject(function() {
 
-   }));
+  }));
 
-   it('should to be initialized without errors', function() {
-      expect(true).toBeTruthy();
-   });
+  it('should to be initialized without errors', function() {
+    expect(true).toBeTruthy();
+  });
 });

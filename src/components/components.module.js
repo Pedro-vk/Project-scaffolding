@@ -4,12 +4,12 @@
  * @namespace app.components
  */
 (function() {
-   'use strict';
+  'use strict';
 
-   angular.module('app.components', [
-      'app.core',
-      'app.components.button',
-      'app.components.heading',
-      'app.components.table'
-   ]);
+  angular.module('app.components', [
+    'app.core',
+    'app.components.button',
+    'app.components.heading',
+    'app.components.table'
+  ]);
 })();

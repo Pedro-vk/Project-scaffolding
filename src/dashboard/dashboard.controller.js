@@ -1,34 +1,34 @@
 (function() {
-   'use strict';
+  'use strict';
 
-   angular
-      .module('app.dashboard')
-      .controller('DashboardController', DashboardController);
+  angular
+    .module('app.dashboard')
+    .controller('DashboardController', DashboardController);
 
-   DashboardController.$inject = ['NodeService'];
+  DashboardController.$inject = ['NodeService'];
 
-   /* @ngInject */
-   function DashboardController(NodeService) {
-      var vm = this;
-      vm.title = 'DashboardController';
+  /* @ngInject */
+  function DashboardController(NodeService) {
+    var vm = this;
+    vm.title = 'DashboardController';
 
-      vm.nodeList = [];
+    vm.nodeList = [];
 
-      activate();
+    activate();
 
-      ////////////////
+    ////////////////
 
-      function activate() {
-         _loadNodes();
+    function activate() {
+      _loadNodes();
+    }
+
+    function _loadNodes() {
+      NodeService.getNodes()
+        .then(success);
+
+      function success(data) {
+        vm.nodeList = data;
       }
-
-      function _loadNodes() {
-         NodeService.getNodes()
-            .then(success);
-
-         function success(data) {
-            vm.nodeList = data;
-         }
-      }
-   }
+    }
+  }
 })();

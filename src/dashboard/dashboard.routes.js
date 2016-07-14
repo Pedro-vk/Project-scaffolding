@@ -1,19 +1,19 @@
 (function() {
-   'use strict';
+  'use strict';
 
-   angular
-      .module('app.dashboard')
-      .config(AppRoutes);
+  angular
+    .module('app.dashboard')
+    .config(AppRoutes);
 
-   AppRoutes.$inject = ['$stateProvider'];
+  AppRoutes.$inject = ['$stateProvider'];
 
-   function AppRoutes($stateProvider) {
-      $stateProvider
-         .state('dashboard', {
-            url: '/dashboard',
-            controller: 'DashboardController',
-            controllerAs: 'vm',
-            templateUrl: 'dashboard/dashboard.html'
-         });
-   }
+  function AppRoutes($stateProvider) {
+    $stateProvider
+      .state('dashboard', {
+        url: '/dashboard',
+        controller: 'DashboardController',
+        controllerAs: 'vm',
+        templateUrl: 'dashboard/dashboard.html'
+      });
+  }
 })();

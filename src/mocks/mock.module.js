@@ -1,7 +1,7 @@
 (function() {
-   'use strict';
+  'use strict';
 
-   angular.module('app.mock', [
-      'app.core'
-   ]);
+  angular.module('app.mock', [
+    'app.core'
+  ]);
 })();

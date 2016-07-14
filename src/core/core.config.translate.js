@@ -1,15 +1,15 @@
 (function() {
-   'use strict';
+  'use strict';
 
-   angular
-      .module('app.core')
-      .config(ResourceConfiguration);
+  angular
+    .module('app.core')
+    .config(ResourceConfiguration);
 
-   ResourceConfiguration.$inject = ['$translateProvider'];
+  ResourceConfiguration.$inject = ['$translateProvider'];
 
-   /* @ngInject */
-   function ResourceConfiguration($translateProvider) {
-      $translateProvider.preferredLanguage('en');
-      $translateProvider.useSanitizeValueStrategy('sanitize');
-   }
+  /* @ngInject */
+  function ResourceConfiguration($translateProvider) {
+    $translateProvider.preferredLanguage('en');
+    $translateProvider.useSanitizeValueStrategy('sanitize');
+  }
 })();
