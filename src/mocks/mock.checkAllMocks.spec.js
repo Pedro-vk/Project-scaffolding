@@ -15,7 +15,8 @@ describe('config: All configurated mocks', () => {
 
     this.MockStorage.getMocksName().forEach(mockName => {
       var dataGenerator = self.MockStorage.getMockByName(mockName).getDataGenerator();
-      expect(dataGenerator).not.toThrow();
+
+      expect(() => dataGenerator(self.MockStorage)).not.toThrow();
     });
   });
 

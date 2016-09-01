@@ -56,8 +56,8 @@
     function getMockByName(name) {
       return _mockStorage.get(name) || false;
     }
-    function getData(url, method) {
-      return getMock(url, method).getData(_prepareUrl(url));
+    function getData(url, method, data) {
+      return getMock(url, method).getData(_prepareUrl(url), method, data);
     }
     function _prepareUrl(url) {
       url = url.replace(API_URL, '');

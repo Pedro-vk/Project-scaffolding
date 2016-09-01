@@ -1,6 +1,7 @@
 describe('provider: MockStorage', () => {
   const _url = 'test/test';
   const _method = 'GET';
+  const _data = {};
   const _name = 'Test';
 
   beforeEach(module('app.mock'));
@@ -68,9 +69,10 @@ describe('provider: MockStorage', () => {
   });
 
   it('should return the generated data passing the url parsed', function() {
-    this.MockStorage.getData(_url, _method);
+    this.MockStorage.getData(_url, _method, _data);
 
-    expect(this.spyDataGenerator).toHaveBeenCalledWith(jasmine.anything(), ['test', 'test']);
+    expect(this.spyDataGenerator)
+      .toHaveBeenCalledWith(jasmine.anything(), ['test', 'test'], jasmine.any(String), jasmine.anything());
   });
 
   it('should return the mock by name', function() {

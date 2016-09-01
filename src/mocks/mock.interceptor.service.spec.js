@@ -51,14 +51,16 @@ describe('service: MockInterceptorService', () => {
     var rejection = {
       config: {
         url: 'test',
-        method: 'GET'
+        method: 'GET',
+        data: {}
       }
     };
     _MockStorage.hasMock.and.returnValue(true);
 
     this.MockInterceptorService.responseError(rejection);
 
-    expect(_MockStorage.getData).toHaveBeenCalledWith(rejection.config.url, rejection.config.method);
+    expect(_MockStorage.getData)
+      .toHaveBeenCalledWith(rejection.config.url, rejection.config.method, rejection.config.data);
   });
 
   it('should set the rejection.data with the mock data', function() {

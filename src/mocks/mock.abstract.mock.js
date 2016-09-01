@@ -56,8 +56,8 @@
       return _mockStorage;
     }
 
-    function getData(url = []) {
-      return _dataGenerator(MockStorage, url);
+    function getData(url, method, data) {
+      return _dataGenerator(_mockStorage, url, method, data);
     }
 
     function addMethod(method) {
