@@ -23,12 +23,12 @@ module.exports = function(config) {
         sourceMap: 'inline'
       }
     },
-    reporters: ['progress', 'coverage'],
+    reporters: ['progress', 'coverage', 'coveralls'],
     coverageReporter: {
       dir: path.coverage.folder,
       reporters: [
         {type: 'html', subdir: 'html'},
-        {type: 'lcovonly', subdir: '.', file: 'icov.info'},
+        {type: 'lcovonly', subdir: '.', file: 'lcov.info'},
         {type: 'json', subdir: '.'},
       ]
     },

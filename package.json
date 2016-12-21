@@ -3,27 +3,21 @@
   "version": "0.1.0",
   "description": "Project scaffolding for any purpose.",
   "scripts": {
-    "build": "gulp build",
-    "serve": "gulp serve",
-    "test": "gulp test",
-    "test:watch": "gulp test:watch"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/PedroGutierrezStratio/Project-scaffolding.git"
-  },
-  "author": "Pedro Gutiérrez",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/PedroGutierrezStratio/Project-scaffolding/issues"
-  },
-  "scripts": {
     "start": "gulp serve",
     "build": "gulp build",
     "test": "gulp test",
     "test:watch": "gulp test:watch"
   },
-  "homepage": "https://github.com/PedroGutierrezStratio/Project-scaffolding#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pedro-vk/Project-scaffolding.git"
+  },
+  "author": "Pedro Gutiérrez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pedro-vk/Project-scaffolding/issues"
+  },
+  "homepage": "https://github.com/Pedro-vk/Project-scaffolding#readme",
   "dependencies": {
     "angular": "1.5.7",
     "angular-animate": "1.5.7",
@@ -69,6 +63,7 @@
     "karma": "1.1.1",
     "karma-babel-preprocessor": "6.0.1",
     "karma-coverage": "1.1.0",
+    "karma-coveralls": "1.1.2",
     "karma-jasmine": "1.0.2",
     "karma-junit-reporter": "1.1.0",
     "karma-ng-html2js-preprocessor": "1.0.0",
